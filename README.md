@@ -160,17 +160,45 @@ npm run build
 ```
 my-typescript-app/
 ├── src/
-│   ├── index.ts         # 应用入口
-│   └── routes/
-│       └── status.ts    # 状态相关路由处理
-├── tests/               # 单元测试代码
-├── dist/                # 编译输出目录
-├── .env                 # 环境变量配置文件
-├── package.json
-├── tsconfig.json
-├── .eslintrc.js
-├── .prettierrc
-└── README.md
+│   ├── controllers/
+│   │   └── status.controller.ts       # 控制器：处理请求逻辑，调用服务层
+│   ├── models/
+│   │   └── status.model.ts            # 数据模型：定义数据结构和类型
+│   ├── routes/
+│   │   └── status.route.ts            # 路由：定义接口路径与控制器函数的映射
+│   ├── services/
+│   │   └── status.service.ts          # 服务：业务逻辑处理
+│   ├── utils/
+│   │   └── logger.ts                  # 工具：日志记录等通用方法
+│   └── index.ts                       # 应用入口：初始化服务与中间件
+├── tests/
+│   ├── controllers/
+│   │   └── status.controller.test.ts  # 控制器单元测试
+│   ├── routes/
+│   │   └── status.route.test.ts       # 路由集成测试（使用 supertest）
+│   ├── services/
+│   │   └── status.service.test.ts     # 服务层单元测试
+│   └── utils/
+│       └── logger.test.ts             # 工具函数测试（可选）
+├── dist/                              # 编译后的 JavaScript 输出（不需要手动修改）
+├── .env                               # 环境变量配置
+├── jest.config.mjs                    # Jest 测试配置（ESM 模式）
+├── package.json                       # 项目信息和依赖
+├── tsconfig.json                      # TypeScript 编译配置
+├── .eslintrc.js                       # ESLint 配置文件
+├── .prettierrc                        # Prettier 配置文件
+└── README.md                          # 项目说明文档（已生成）
+
 ```
 
+## Best Practices
+- TypeScript 项目结构和配置（tsconfig.json） 
+- ES模块规范及导入导出方式 
+- ESLint + Prettier 严格代码规范和格式化 
+- Jest + Supertest 的完整单元测试和覆盖率设置 
+- package.json 脚本规范化（分开命令，带注释） 
+- 环境变量管理与 .env 文件使用 
+- Nodemon、ts-node-dev、nodemon + ts-node/esm 开发热重载 
+- Node 版本管理及 engines、.nvmrc 规范
+- README 详尽的项目文档编写
 ---

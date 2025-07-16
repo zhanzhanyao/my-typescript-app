@@ -1,12 +1,12 @@
 import request from 'supertest';
 import express from 'express';
-import statusRouter from '../src/routes/status';
+import router from "../src/routes/status.route";
 
 describe('Status Update Endpoint', () => {
   it('should receive a valid request and return 200', async () => {
     const app = express();
     app.use(express.json());
-    app.use('/status', statusRouter);
+    app.use('/status', router);
 
     const res = await request(app)
       .post('/status/update')

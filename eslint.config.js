@@ -27,5 +27,6 @@ export default [
       '@typescript-eslint/explicit-function-return-type': 'warn',
       '@typescript-eslint/strict-boolean-expressions': 'warn',
     },
+    ignores: ['/coverage']
   },
 ];
