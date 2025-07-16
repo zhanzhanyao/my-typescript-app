@@ -1,7 +1,9 @@
+// 自动加载根目录的 .env 文件里的变量
+import 'dotenv/config';
 // 导入 express 框架
 import express from 'express';
 // 导入我们定义的路由模块
-import statusRouter from './routes/status';
+import statusRouter from './routes/status.js';
 
 // 创建 express 应用实例
 const app = express();
@@ -13,7 +15,7 @@ app.use(express.json());
 app.use('/status', statusRouter);
 
 // 设置端口号，优先使用环境变量，否则默认 3000
-const PORT = process.env.PORT || 3000;
+const PORT = Number(process.env.PORT ?? 3000);
 
 // 启动服务，监听端口
 app.listen(PORT, () => {
