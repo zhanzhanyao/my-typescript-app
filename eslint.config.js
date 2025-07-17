@@ -5,11 +5,11 @@ import pluginPrettier from 'eslint-plugin-prettier';
 
 export default [
   {
-    files: ['src/**/*.ts'],
+    files: ['src/**/*.ts', 'tests/**/*.ts'],
     languageOptions: {
       parser: parserTs,
       parserOptions: {
-        project: './tsconfig.json',
+        project: './tsconfig.eslint.json',
         ecmaVersion: 2020,
         sourceType: 'module',
       },
