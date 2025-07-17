@@ -76,9 +76,6 @@ PORT=4000 npm run dev
 ```bash
 npm run dev
 ```
-
-使用 `nodemon` 监听 `src` 目录，自动重启服务，方便调试。
-
 ---
 
 ## 生产启动
@@ -150,7 +147,6 @@ npm run build
 - 支持 JSON 格式请求体。
 - 内置完善的代码风格检查和自动修复工具。
 - 集成单元测试和代码覆盖率检测，保障代码质量。
-- 支持开发热重载，提升开发效率。
 - 使用 `.env` 文件管理环境变量，便于多环境切换和配置管理。
 
 ---
@@ -198,7 +194,6 @@ my-typescript-app/
 - Jest + Supertest 的完整单元测试和覆盖率设置 
 - package.json 脚本规范化（分开命令，带注释） 
 - 环境变量管理与 .env 文件使用 
-- Nodemon、ts-node-dev、nodemon + ts-node/esm 开发热重载 
 - Node 版本管理及 engines、.nvmrc 规范
 - README 详尽的项目文档编写
 ---
