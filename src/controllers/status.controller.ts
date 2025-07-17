@@ -14,7 +14,7 @@ export class StatusController {
   };
 
   getStatus = (req: Request, res: Response): void => {
-    const id: string = req.body.id;
+    const id: string = req.params.id;
     const result = this.statusService.getStatus(id);
     if (!result) {
       res.status(404).json({ error: 'Status not found' });
@@ -24,7 +24,7 @@ export class StatusController {
   };
 
   activateStatus = (req: Request, res: Response): void => {
-    const id: string = req.body.id;
+    const id: string = req.params.id;
     try {
       const updatedStatus = this.statusService.activateStatus(id);
       res.json(updatedStatus);

@@ -1,9 +1,11 @@
-// eslint.config.js
-import pluginTs from '@typescript-eslint/eslint-plugin';
-import parserTs from '@typescript-eslint/parser';
-import pluginPrettier from 'eslint-plugin-prettier';
+// eslint.config.js (CommonJS 版本)
 
-export default [
+const pluginTs = require('@typescript-eslint/eslint-plugin');
+const parserTs = require('@typescript-eslint/parser');
+const pluginPrettier = require('eslint-plugin-prettier');
+
+/** @type {import("eslint").Linter.FlatConfig[]} */
+module.exports = [
   {
     files: ['src/**/*.ts', 'tests/**/*.ts'],
     languageOptions: {
@@ -27,6 +29,6 @@ export default [
       '@typescript-eslint/explicit-function-return-type': 'warn',
       '@typescript-eslint/strict-boolean-expressions': 'warn',
     },
-    ignores: ['/coverage']
+    ignores: ['/coverage'],
   },
 ];
