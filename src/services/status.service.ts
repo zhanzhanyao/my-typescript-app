@@ -1,4 +1,4 @@
-import { Status } from '../models/status.model.js';
+import { Status } from '../models/status.model';
 export class StatusService {
   private statusStore: Map<string, Status> = new Map();
 

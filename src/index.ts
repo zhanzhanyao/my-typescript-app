@@ -1,7 +1,7 @@
 import 'dotenv/config';
-import statusRoute from './routes/status.route.js';
+import statusRoute from './routes/status.route';
 import express from 'express';
-import { logInfo } from './utils/logger.js';
+import { logInfo } from './utils/logger';
 
 const app = express();
 app.use(express.json());
