@@ -1,2 +1,44 @@
+# Node modules - 不要提交依赖项
 node_modules/
-/coverage/*
+
+# 输出目录 - TypeScript 编译后的文件
+dist/
+build/
+
+# TypeScript 编译缓存
+*.tsbuildinfo
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# IDE / 编辑器配置
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Jest 测试覆盖率输出
+coverage/
+
+# ESLint 缓存
+.eslintcache
+
+# 其他临时文件
+*.log
+*.bak
+*.tmp
+
+# Mac 编译中偶尔会生成的文件
+*.swp
