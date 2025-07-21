@@ -36,8 +36,6 @@
 - **express**：Node.js Web 框架，用于搭建 HTTP 服务和路由处理。
 - **dotenv**：加载 `.env` 环境变量配置文件，方便环境配置管理。
 - **typescript**：JavaScript 超集，提供类型系统和编译功能。
-- **ts-node**：直接运行 TypeScript 代码的工具，方便开发调试。
-- **nodemon**：监控文件变化，自动重启服务，提升开发效率。
 - **jest**：JavaScript 测试框架，用于编写和执行单元测试。
 - **supertest**：HTTP 断言库，用于测试 Express 路由。
 - **eslint**：代码风格检查工具，保证代码质量。
