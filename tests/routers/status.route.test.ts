@@ -1,4 +1,4 @@
-import request from 'supertest';
+const request = require('supertest');
 const app = require('../../src/app').default;
 
 describe('Status Router', () => {

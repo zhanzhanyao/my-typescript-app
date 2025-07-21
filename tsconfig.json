@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "CommonJS",              // ✅ 改为 CommonJS，更兼容 node
+    "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node",
     "outDir": "./dist",
     "rootDir": "./src",                // ✅ 指定源目录

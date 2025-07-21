@@ -9,4 +9,9 @@ export default {
   transform: {
     '^.+\\.ts$': ['ts-jest'],
   },
+  globals: {
+    'ts-jest': {
+      tsconfig: './tsconfig.json',  // ✅ 显式指定 tsconfig
+    },
+  },
 };
