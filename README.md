@@ -197,3 +197,36 @@ my-typescript-app/
 - Node 版本管理及 engines、.nvmrc 规范
 - README 详尽的项目文档编写
 ---
+
+
+## 本项目涉及的ts语法点
+- [x] ES6 模块导入导出（`import` / `export`）
+- [x] 基础类型（`string`，`number`，`boolean`，`void`）
+- [x] 接口（`interface`），包括泛型接口
+- [x] 枚举（`enum`）
+- [x] 泛型（`<T>`）
+- [x] 函数类型注解（参数和返回值）
+- [x] 异步函数（`async` / `await`）
+- [x] 对象字面量与类型注解
+- [x] 展开运算符（`...`）
+- [x] 类型守卫（条件判断、`includes` 等）
+- [x] 类（`class`）、构造函数、私有成员变量
+- [x] 方法链式调用（返回 `this`）
+- [x] Promise 类型返回
+- [x] 数组方法（`filter`、`reduce`、`slice`）
+- [x] Map 集合类型及操作
+- [x] 错误抛出（`throw new Error()`）
+- [x] 错误捕获（`try...catch`）
+- [x] JSDoc 注释
+- [x] Jest 测试框架语法（`describe`、`it`/`test`、`beforeEach`）
+- [x] Jest Mock（`jest.spyOn`、`mockImplementation`）
+- [x] Jest 断言（`expect`，`toEqual`，`toThrow`，`toHaveBeenCalledWith`）
+- [ ] 类型别名（`type`）
+- [ ] 联合类型 & 交叉类型
+- [ ] 字面量类型（Literal Types）
+- [ ] 枚举高级用法（反向映射等）
+- [ ] 装饰器（`@Decorator`）
+- [ ] 命名空间（`namespace`）
+- [ ] 条件类型 & 映射类型（高级泛型）
+- [ ] 异步生成器 & 异步迭代器
+- [ ] 模板字面量类型（Template Literal Types）
